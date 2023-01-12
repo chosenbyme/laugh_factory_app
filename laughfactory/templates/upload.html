@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Submit a Meme</title>
 </head>
 <body>
-    <h1>This is upload page</h1>
+    <form action="POST">
+        <h1>Submit Memes</h1>
+        <p>Share some funny memes!</p>
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="meme" id="meme-label">Meme</label>
+        <input type="url" name="meme" id="meme">
+        <label for="caption" id="caption-label">Caption</label>
+        <input type="text" name="caption" id="caption">
+        <button>Submit the Meme</button>
+        <a href="/memes">Go Back</a>
+    </form>
 </body>
 </html>
