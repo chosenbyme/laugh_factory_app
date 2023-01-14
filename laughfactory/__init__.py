@@ -5,7 +5,8 @@ from flask_migrate import Migrate
 def create_app():
     app = Flask(__name__)
 
-    app.config['SQLALCHEMY_DATABASE_URI']= 'postgresql://postgres:tyler7820@localhost:5432/laugh-factory-app'
+    # app.config['SQLALCHEMY_DATABASE_URI']= 'postgresql://postgres:tyler7820@localhost:5432/laugh-factory-app'
+    app.config['SQLALCHEMY_DATABASE_URI']= 'postgresql://postgres:Kai280707@localhost:5434/laugh-factory-app'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     from . import models
@@ -13,7 +14,7 @@ def create_app():
     migrate = Migrate(app, models.db)
 
     @app.route('/')
-    def index():
+    def main():
         return render_template('index.html')
 
     # meme index route
