@@ -20,17 +20,21 @@
            
         </div>
     </nav>
-    <form action="POST">
-        <h1>Submit Memes</h1>
-        <p>Share some funny memes!</p>
-        <label for="name" id="name-label">Name</label>
-        <input type="text" name="name" id="name">
-        <label for="meme" id="meme-label">Meme</label>
-        <input type="url" name="meme" id="meme">
-        <label for="caption" id="caption-label">Caption</label>
-        <input type="text" name="caption" id="caption">
-        <button>Submit the Meme</button>
-        <a href="/memes">Go Back</a>
-    </form>
+    <div class="main-container">
+        <div class="card">
+            <h1>Submit Memes</h1>
+            <div class="callout">Share some funny memes!</div>
+            <form action="POST">
+                <!-- <label for="name" id="name-label">Name</label> -->
+                <input placeholder="NAME" type="text" name="name" id="name">
+                <!-- <label for="meme" id="meme-label">Meme</label> -->
+                <input placeholder="MEME URL" type="url" name="meme" id="meme">
+                <!-- <label for="caption" id="caption-label">Caption</label> -->
+                <input placeholder="CAPTION" type="text" name="caption" id="caption">
+                <button>Submit Your Meme</button>
+                <a href="/">Go Back</a>
+            </form>
+        </div> 
+    </div>
 </body>
 </html>
