@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -14,8 +16,6 @@ ul{
     list-style: none;
     display: flex;
     align-content: row;
-    // padding-left: 1.5rem;
-    // padding-right: 1.5rem;
 }
 
 li{
@@ -23,21 +23,19 @@ li{
     padding-right: 1rem; 
 }
 
-a{
+a, li{
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: $font-style;
     font-size: 20px;
     font-weight: bolder;
-    // color: red;
-    // #signup{
-    //     color:black
-    // }
+    color:$accent-color2;
+    margin-top: 20px;
 }
 
 #signup, #home{
-    color: white;
+    color: $accent-color2;
 }
 
-#login,#signup2{
-    color: black;
+#login,#signup2, #loggedin{
+    color: $accent-color1;
 }

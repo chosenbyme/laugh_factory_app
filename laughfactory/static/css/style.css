@@ -21,27 +21,37 @@ li {
   padding-right: 1rem;
 }
 
-a {
+a, li {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 20px;
   font-weight: bolder;
+  color: white;
+  margin-top: 20px;
 }
 
 #signup, #home {
   color: white;
 }
 
-#login, #signup2 {
+#login, #signup2, #loggedin {
   color: black;
 }
 
-body {
+.login-card {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color: beige;
   display: flex;
   flex-direction: column;
+  align-content: center;
   align-items: center;
-  width: 100%;
-  margin-bottom: 4em;
+  justify-content: center;
+  margin-top: 4em;
+  width: 23em;
+  height: 19em;
+  padding: 50px;
 }
 
 .card {
@@ -54,10 +64,30 @@ body {
   align-content: center;
   align-items: center;
   justify-content: center;
+  margin-top: 4em;
   width: 23em;
   height: 27em;
   padding: 50px;
+}
+
+.upload-card {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   margin-top: 4em;
+  width: 25em;
+  height: 26em;
+  padding: 50px;
+}
+
+#goback {
+  color: black;
 }
 
 form {
@@ -116,16 +146,12 @@ button {
   border-radius: 10px;
 }
 
-a {
-  color: white;
-  margin-top: 20px;
+#error-image {
+  height: 25em;
+  width: auto;
 }
 
-#goback {
-  color: black;
-}
-
-.login-card {
+.error-card {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 10px;
@@ -135,32 +161,84 @@ a {
   align-content: center;
   align-items: center;
   justify-content: center;
-  width: 23em;
-  height: 19em;
-  padding: 50px;
   margin-top: 4em;
-}
-
-#memes_container {
-  display: flex;
-  justify-content: center, space-between;
-  height: 200px;
-  align-items: center;
-}
-
-#error-img {
-  justify-content: center;
-  height: 200px;
-  width: auto;
+  width: 35em;
+  height: 30em;
+  padding: 50px;
 }
 
 #error-message {
-  color: black;
+  margin-bottom: 0.05em;
+}
+
+h2 {
   font-family: sans-serif;
+}
+
+.main-card {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
+  height: auto;
+  width: 35em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.meme {
+  width: 100%;
+}
+
+img {
+  background-color: beige;
+}
+
+.emoji {
+  height: 1.5em;
+  width: auto;
+}
+
+.user {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.comments {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reactions-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 1em;
+}
+
+.user-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
 }
 
 body {
   background-color: #FFCE5C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4em;
 }
 
 /*# sourceMappingURL=style.css.map */

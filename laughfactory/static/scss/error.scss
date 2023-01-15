@@ -1,0 +1,23 @@
+@import "./card.scss";
+@import "./variables.scss";
+
+#error-image{
+    height: 25em;
+    width: auto;
+}
+
+.error-card{
+    @include card{
+        width: 35em;
+        height: 30em;
+        padding: 50px;
+    }
+}
+
+#error-message{
+    margin-bottom: 0.05em;
+}
+
+h2{
+    font-family: $font-style;
+}

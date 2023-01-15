@@ -1,0 +1,53 @@
+@import "./card.scss";
+@import "./variables.scss";
+
+
+.main-card{
+    @include card{
+        height: auto;
+        width: 35em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
+
+.meme{
+    width: 100%;
+}
+
+img{
+    background-color: $card-color;
+    // color: $main-color;
+}
+
+.emoji{
+    height:1.5em;
+    width: auto;
+}
+
+.user{
+    font-family: $font-style;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.comments{
+    font-family: $font-style;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reactions-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 1em;
+}
+
+.user-container{
+    display:flex;
+    justify-content: flex-start;
+    width: 90%;
+}

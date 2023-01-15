@@ -8,7 +8,11 @@
     <title>Oops!</title>
 </head>
 <body>
-    <h1 id="error-message">Well this is awkward! Looks like something went wrong!</h1>
-    <img id="error-img" src="../static/images/awkwardsmile.jpg" alt="awkward smile">
+    <a href="/"><img id="navbar_logo" src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Laugh Factory Logo"></img></a>
+    <div class="error-card">
+        <h1 id="error-message">Well this is awkward!</h1>
+        <h2>Looks like something went wrong!</h2>
+        <img id="error-image" src="../static/images/awkwardsmile.jpg" alt="awkward smile">
+    </div>
 </body>
 </html>

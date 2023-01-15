@@ -1,9 +1,9 @@
 @import "./card.scss";
 
-.login-card{
+.card{
     @include card{
         width: 23em;
-        height: 19em;
+        height: 27em;
         padding: 50px;
     }
 }

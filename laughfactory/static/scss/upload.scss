@@ -1,0 +1,14 @@
+@import "./card.scss";
+
+.upload-card{
+    @include card{
+        width: 25em;
+        height: 26em;
+        padding: 50px;
+    }
+}
+
+
+#goback{
+    color: black;
+}
