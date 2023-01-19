@@ -11,6 +11,7 @@ def login():
             email = request.form['email'],
             password = request.form['password']
         )
+        
         models.db.session.add(new_user)
         models.db.session.commit()
 

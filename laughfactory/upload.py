@@ -8,11 +8,13 @@ bp = Blueprint(
 
 @bp.route('/', methods=['POST','GET'])
 def upload():
+    fname = request.args['fname']
+    lname = request.args['lname']
     # if request.method == 'POST':
-    #     new_meme = models.User(
-    #         username = request.username,
-    #         password = request.password
+    #     new_meme = models.Comment(
+    #         url = request.memeurl
     #     )
 
     #     models.db.session.add(new_meme)
-    return render_template('upload.html')
+    return render_template('upload.html',firstname=fname,lastname=lname)
+
