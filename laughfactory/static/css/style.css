@@ -39,12 +39,8 @@ a:hover {
   color: black;
 }
 
-#name1 {
+#name1, #name2 {
   color: black;
-}
-
-#name2 {
-  color: white;
 }
 
 #login, #signup2, #upload, #logout {
