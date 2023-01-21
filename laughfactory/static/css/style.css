@@ -6,6 +6,11 @@
   margin-top: 1em;
 }
 
+#comment-big{
+  font-weight: bolder;
+  text-shadow: #FC0 1px 0 10px;
+}
+
 #navbar_logo {
   height: 5em;
 }

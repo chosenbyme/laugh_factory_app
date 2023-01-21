@@ -31,11 +31,11 @@
         <!-- rendering url & text from related post starts here -->
         <img class="meme" src="{{post.url}}" alt="user's meme">
         <div class="caption-container">
-          <div class="user">
+          <div class="user" id="user-comment">
             {{post.user.username}}
           </div>
           <div class="caption"> 
-            {{post.text}}
+            <div id="comment-big">{{post.text}}</div>
           </div>
         </div>
         <div class="comments-container">
@@ -45,7 +45,7 @@
                 {% for comment in post.comments %}
                 <div class="d-flex justify-content-between comment-align">
                   <div>
-                    <a class="user" href="/posts/{{comment.user.username}}">{{comment.user.username}}</a> 
+                    <a class="user" id="user-comment" href="/posts/{{comment.user.username}}">{{comment.user.username}}</a> 
                     {{comment.text}}
                   </div>
                   <div class="comment-align">
