@@ -1,16 +1,18 @@
 from flask import Flask
+import os
 from os import path
 from flask_login import LoginManager
 from flask_migrate import Migrate 
-
+from dotenv import load_dotenv
 
 def create_app():
     app = Flask(__name__)
-    app.debug = True
+    load_dotenv()
+    my_id = os.getenv("SQL")
     app.config['SECRET_KEY'] = "helloworld"
     # app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     # db.init_app(app)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://xrbmsiwd:1vN6yWwonN5n6YIPoIcWw5OypbiTCJY4@salt.db.elephantsql.com/xrbmsiwd'
+    app.config['SQLALCHEMY_DATABASE_URI'] = my_id
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 
     from . import models 
