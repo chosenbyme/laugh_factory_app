@@ -9,7 +9,7 @@ def create_app():
     app.config['SECRET_KEY'] = "helloworld"
     # app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     # db.init_app(app)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:280707@localhost:5434/laugh_factory_app'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://xrbmsiwd:1vN6yWwonN5n6YIPoIcWw5OypbiTCJY4@salt.db.elephantsql.com/xrbmsiwd'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 
     from . import models 
